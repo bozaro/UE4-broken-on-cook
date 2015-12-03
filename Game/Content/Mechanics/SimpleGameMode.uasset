@@ -1,0 +1,1057 @@
+Summary : 
+  MagicPostTag : 2653586369
+  Tag : -1641380927
+  LegacyFileVersion : -6
+  FileVersionUE3 : 864
+  FileVersionUE4 : 482
+  FolderName : None
+  PackageSource : 3759983870
+Export : 
+  - 
+    ObjectName : SimpleGameMode_C
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.BlueprintGeneratedClass
+    SuperIndex : Import:/Script/Engine.GameMode
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode_C.SimpleConstructionScript_0
+      Next : None
+      SuperStruct : Import:/Script/Engine.GameMode
+      Children : Export:SimpleGameMode_C.UserConstructionScript
+      FuncMap : 
+        - 
+          Key : UserConstructionScript
+          Value : Export:SimpleGameMode_C.UserConstructionScript
+      ClassFlags : 12845596
+      ClassWithin : Import:/Script/CoreUObject.Object
+      ClassConfigName : Game
+      ClassGeneratedBy : Export:SimpleGameMode
+      ClassDefaultObject : Export:Default__SimpleGameMode_C
+    Dependencies : 
+      - Export:SimpleGameMode_C.SimpleConstructionScript_0
+      - Export:SimpleGameMode_C.UserConstructionScript
+      - Export:SimpleGameMode
+      - Export:Default__SimpleGameMode_C
+    ObjectFlags : 9
+    NotForEditorGame : True
+  - 
+    ObjectName : DefaultSceneRoot
+    OuterIndex : Export:SimpleGameMode_C
+    ClassIndex : Import:/Script/CoreUObject.ObjectProperty
+    SuperIndex : None
+    Object : 
+      Next : None
+      ArrayDim : 1
+      SaveFlags : 17179869188
+      RepNotifyFunc : None
+      PropertyClass : Import:/Script/Engine.SceneComponent
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:SimpleGameMode_C
+    ClassIndex : Import:/Script/CoreUObject.Function
+    SuperIndex : Import:/Script/Engine.Actor.UserConstructionScript
+    Object : 
+      Next : Export:SimpleGameMode_C.DefaultSceneRoot
+      SuperStruct : Import:/Script/Engine.Actor.UserConstructionScript
+      Children : None
+      ScriptBytecodeSize : 5
+      ScriptStorageSize : 5
+      ScriptData : 
+        - 94
+        - 90
+        - 4
+        - 11
+        - 83
+      FunctionFlags : 201459712
+      EventGraphFunction : None
+    Dependencies : 
+      - Export:SimpleGameMode_C.DefaultSceneRoot
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : DefaultSceneRoot_GEN_VARIABLE
+    OuterIndex : Export:SimpleGameMode_C
+    ClassIndex : Import:/Script/Engine.SceneComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : bVisualizeComponent
+            Type : BoolProperty
+            BoolVal : 1
+    ObjectFlags : 41
+    NotForEditorGame : True
+  - 
+    ObjectName : SimpleConstructionScript_0
+    OuterIndex : Export:SimpleGameMode_C
+    ClassIndex : Import:/Script/Engine.SimpleConstructionScript
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : RootNodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode_C.SimpleConstructionScript_0.SCS_Node_0
+        - 
+          Tag : 
+            Name : DefaultSceneRootNode
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode_C.SimpleConstructionScript_0.SCS_Node_0
+    Dependencies : 
+      - Export:SimpleGameMode_C.SimpleConstructionScript_0.SCS_Node_0
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : SCS_Node_0
+    OuterIndex : Export:SimpleGameMode_C.SimpleConstructionScript_0
+    ClassIndex : Import:/Script/Engine.SCS_Node
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ComponentTemplate
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode_C.DefaultSceneRoot_GEN_VARIABLE
+        - 
+          Tag : 
+            Name : VariableName
+            Type : NameProperty
+          Property : DefaultSceneRoot
+        - 
+          Tag : 
+            Name : CategoryName
+            Type : TextProperty
+          Property : 
+            Flags : 8
+            DisplayString : 
+              Source : Default
+        - 
+          Tag : 
+            Name : VariableGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : yBgl6h4ZZE+8AQvPtgjAfw==
+    Dependencies : 
+      - Export:SimpleGameMode_C.DefaultSceneRoot_GEN_VARIABLE
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : Default__SimpleGameMode_C
+    OuterIndex : None
+    ClassIndex : Export:SimpleGameMode_C
+    SuperIndex : None
+    Object : 
+      - 
+        Tag : 
+          Name : DefaultPawnClass
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Import:/Game/Mechanics/PvP_Grenadier_miniVS.PvP_Grenadier_miniVS_C
+    Dependencies : 
+      - Import:/Game/Mechanics/PvP_Grenadier_miniVS.PvP_Grenadier_miniVS_C
+      - Export:SimpleGameMode_C
+      - Import:/Script/Engine.Default__GameMode
+    ObjectFlags : 17
+  - 
+    ObjectName : SimpleGameMode
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.Blueprint
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ParentClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/Engine.GameMode
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode_C.SimpleConstructionScript_0
+        - 
+          Tag : 
+            Name : UbergraphPages
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph
+        - 
+          Tag : 
+            Name : FunctionGraphs
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.UserConstructionScript
+        - 
+          Tag : 
+            Name : CategorySorting
+            Type : ArrayProperty
+            InnerType : NameProperty
+          Property : 
+            - Default
+        - 
+          Tag : 
+            Name : BlueprintSystemVersion
+            Type : IntProperty
+          Property : 2
+        - 
+          Tag : 
+            Name : LastEditedDocuments
+            Type : ArrayProperty
+            InnerType : StructProperty
+          Property : 
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:SimpleGameMode_C.SimpleConstructionScript_0
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : -1.00000000000000000000
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:SimpleGameMode.UserConstructionScript
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : -1.00000000000000000000
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:SimpleGameMode.EventGraph
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : -1.00000000000000000000
+        - 
+          Tag : 
+            Name : ThumbnailInfo
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode.SceneThumbnailInfo_0
+        - 
+          Tag : 
+            Name : GeneratedClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:SimpleGameMode_C
+        - 
+          Tag : 
+            Name : bLegacyNeedToPurgeSkelRefs
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : bLegacyGeneratedClassIsAuthoritative
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : BlueprintGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : G6bjNYNOakSgv2ILokirzg==
+      LegacyGeneratedClassIsAuthoritative : True
+    Dependencies : 
+      - Export:SimpleGameMode_C.SimpleConstructionScript_0
+      - Export:SimpleGameMode.EventGraph
+      - Export:SimpleGameMode.UserConstructionScript
+      - Export:SimpleGameMode.SceneThumbnailInfo_0
+      - Export:SimpleGameMode_C
+    ObjectFlags : 67108875
+  - 
+    ObjectName : EventGraph
+    OuterIndex : Export:SimpleGameMode
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : Nodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_455
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_456
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : cfYOnk8QLEOMxnpX+IqwqA==
+    Dependencies : 
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_455
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_456
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_Event_455
+    OuterIndex : Export:SimpleGameMode.EventGraph
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_Event
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : EventReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Export:SimpleGameMode_C
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : ReceiveBeginPlay
+        - 
+          Tag : 
+            Name : bOverrideFunction
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_455.Pin[OutputDelegate]
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_455.Pin[then]
+        - 
+          Tag : 
+            Name : NodeComment
+            Type : StrProperty
+          Property : This node is disabled and will not be called.\nDrag off pins to build functionality.
+        - 
+          Tag : 
+            Name : bCommentBubblePinned
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : bCommentBubbleVisible
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : 3a71Y3CJgEiYhxsLpfBZXA==
+        - 
+          Tag : 
+            Name : bIsNodeEnabled
+            Type : BoolProperty
+    Dependencies : 
+      - Export:SimpleGameMode_C
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_455.Pin[OutputDelegate]
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_455.Pin[then]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]
+    OuterIndex : Export:SimpleGameMode.EventGraph.K2Node_Event_455
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : Import:/Script/Engine.Actor
+                MemberName : ReceiveBeginPlay
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:SimpleGameMode.EventGraph.K2Node_Event_455
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_Event_456
+    OuterIndex : Export:SimpleGameMode.EventGraph
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_Event
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : EventReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Export:SimpleGameMode_C
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : ReceiveTick
+        - 
+          Tag : 
+            Name : bOverrideFunction
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[OutputDelegate]
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[then]
+            - 
+              ObjectValue : Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[DeltaSeconds]
+        - 
+          Tag : 
+            Name : NodePosY
+            Type : IntProperty
+          Property : 200
+        - 
+          Tag : 
+            Name : NodeComment
+            Type : StrProperty
+          Property : This node is disabled and will not be called.\nDrag off pins to build functionality.
+        - 
+          Tag : 
+            Name : bCommentBubblePinned
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : bCommentBubbleVisible
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : Nu6dylThZEazeOfXrdCUbw==
+        - 
+          Tag : 
+            Name : bIsNodeEnabled
+            Type : BoolProperty
+    Dependencies : 
+      - Export:SimpleGameMode_C
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[OutputDelegate]
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[then]
+      - Export:SimpleGameMode.EventGraph.K2Node_Event_456.Pin[DeltaSeconds]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]
+    OuterIndex : Export:SimpleGameMode.EventGraph.K2Node_Event_456
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : Import:/Script/Engine.Actor
+                MemberName : ReceiveTick
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:SimpleGameMode.EventGraph.K2Node_Event_456
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[DeltaSeconds]
+    OuterIndex : Export:SimpleGameMode.EventGraph.K2Node_Event_456
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : DeltaSeconds
+        - 
+          Tag : 
+            Name : PinToolTip
+            Type : StrProperty
+          Property : Delta Seconds\nFloat
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : float
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+        - 
+          Tag : 
+            Name : DefaultValue
+            Type : StrProperty
+          Property : 0.0
+        - 
+          Tag : 
+            Name : AutogeneratedDefaultValue
+            Type : StrProperty
+          Property : 0.0
+    ObjectFlags : 8
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:SimpleGameMode
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : Nodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript]
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : NBYuQ5sYd0SY5TYPdqrleQ==
+    Dependencies : 
+      - Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript]
+    ObjectFlags : 8
+  - 
+    ObjectName : Entry[UserConstructionScript]
+    OuterIndex : Export:SimpleGameMode.UserConstructionScript
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_FunctionEntry
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SignatureClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/Engine.Actor
+        - 
+          Tag : 
+            Name : SignatureName
+            Type : NameProperty
+          Property : UserConstructionScript
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : ivsgFFuO1kOSEEMqW4oEXA==
+    Dependencies : 
+      - Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript]
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : SceneThumbnailInfo_0
+    OuterIndex : Export:SimpleGameMode
+    ClassIndex : Import:/Script/UnrealEd.SceneThumbnailInfo
+    SuperIndex : None
+  - 
+    ObjectName : PackageMetaData
+    OuterIndex : None
+    ClassIndex : Import:/Script/CoreUObject.MetaData
+    SuperIndex : None
+    Object : 
+      ObjectMetaDataMap : 
+        - 
+          Key : 
+            Object : Export:SimpleGameMode_C
+          Value : 
+            - 
+              Key : ShowCategories
+              Value : Input|MouseInput Input|TouchInput
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Info Rendering Movement Replication Replication Actor Input Movement Collision Rendering Utilities|Transformation
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : ShowCategories
+              Value : Input|MouseInput Input|TouchInput
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Info Rendering Movement Replication Replication Actor Input Movement Collision Rendering Utilities|Transformation
+        - 
+          Key : 
+            Object : Export:SimpleGameMode.EventGraph.K2Node_Event_455
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:SimpleGameMode.EventGraph.K2Node_Event_456
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:SimpleGameMode.UserConstructionScript.Entry[UserConstructionScript]
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : Category
+              Value : Default
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+        - 
+          Key : 
+            Object : Export:SimpleGameMode_C.DefaultSceneRoot
+          Value : 
+            - 
+              Key : Category
+              Value : Default
+        - 
+          Key : 
+            Object : Export:SimpleGameMode_C.UserConstructionScript
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+    ObjectFlags : 2
+    NotForClient : True
+    NotForServer : True
+GatherableTextData : 
+  - 
+    SourceData : 
+      SourceString : Default
+    SourceSiteContexts : 
+      - 
+        KeyName : 0B7128554868F034516DED914382970E
+        SiteDescription : /Game/Mechanics/SimpleGameMode.SimpleGameMode_C:SimpleConstructionScript_0.SCS_Node_0.CategoryName
+        IsEditorOnly : True
+Import : 
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : BlueprintGeneratedClass
+    OuterIndex : Import:/Game/Mechanics/PvP_Grenadier_miniVS
+    ObjectName : PvP_Grenadier_miniVS_C
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : EdGraphSchema_K2
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_Event
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_FunctionEntry
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Function
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : MetaData
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Object
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : ObjectProperty
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Actor
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Blueprint
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : BlueprintGeneratedClass
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraphPin
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : GameMode
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SceneComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SCS_Node
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SimpleConstructionScript
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/UnrealEd
+    ObjectName : SceneThumbnailInfo
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Function
+    OuterIndex : Import:/Script/Engine.Actor
+    ObjectName : UserConstructionScript
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : GameMode
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Default__GameMode
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Game/Mechanics/PvP_Grenadier_miniVS
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/BlueprintGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/CoreUObject
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/Engine
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/UnrealEd
+Thumbnails : 
+  - 
+    ObjectClassName : Blueprint
+    ObjectPathWithoutPackageName : SimpleGameMode
+AssetRegistry : 
+  - 
+    ObjectPath : SimpleGameMode
+    ObjectClassName : Blueprint
+    Tags : 
+      - 
+        Key : ParentClass
+        Value : Class\'/Script/Engine.GameMode\'
+      - 
+        Key : BlueprintType
+        Value : BPTYPE_Normal
+      - 
+        Key : ImplementedInterfaces
+      - 
+        Key : GeneratedClass
+        Value : BlueprintGeneratedClass\'/Game/Mechanics/SimpleGameMode.SimpleGameMode_C\'
+      - 
+        Key : NumReplicatedProperties
+        Value : 0
+      - 
+        Key : ParentClassPackage
+        Value : /Script/Engine
+      - 
+        Key : NativeParentClass
+        Value : Class\'/Script/Engine.GameMode\'
+      - 
+        Key : BlueprintDescription
+      - 
+        Key : ClassFlags
+        Value : 12845596
+      - 
+        Key : IsDataOnly
+        Value : True
+      - 
+        Key : FiB
+        Value : owAUAAEAAQBeAAEAAQABAAEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAMAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAAQAAQABAAEACQABAAEAAQABAA4AAQABAAEATABqAHQAbgBmAHUAVABkAGkAZgBuAGIAAQAdAAEAAQABAEgAcwBiAHEAaQBFAGoAdABxAG0AYgB6AE8AYgBuAGYAYABGAHcAZgBvAHUASABzAGIAcQBpAAEADAABAAEAAQBGAHcAZgBvAHUASABzAGIAcQBpAAEABQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBFAGYAdABkAHMAagBxAHUAagBwAG8AAQANAAEAAQABAEUAZgB0AGQAcwBqAHEAdQBqAHAAbwABAAYAAQABAAEACQABAAEAAQABAAsAAQABAAEAQwBtAHYAZgBxAHMAagBvAHUAAQAQAAEAAQABAE8AcABIAHMAYgBxAGkAVQBwAHAAbQB1AGoAcQABAAgAAQABAAEAKQBPAHAAbwBmACoAAQAHAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAE8AcABlAGYAdAABAAcAAQABAAEATwBwAGUAZgB0AAEACAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoA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bwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAB8AAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABACAAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABACEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABACIAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAGAAEAAQABAGYAeQBmAGQAAQAjAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAE8AYgBuAGYAAQAGAAEAAQABAE8AYgBuAGYAAQAkAAEAAQABAAEAAQABAAEAAgAJAAEAAQABAAEACAABAAEAAQBMADMATwBwAGUAZgABAAwAAQABAAEARgB3AGYAbwB1AGAATwBiAG4AZgABABYAAQABAAEARgB3AGYAbwB1ACEAfABHAHYAbwBkAHUAagBwAG8ATwBiAG4AZgB+AAEAAgABAAEAAQAOAAEAAQABAEcAdgBvAGQAdQBqAHAAbwBPAGIAbgBmAAEABQABAAEAAQABAAEAFQABAAEAAQBWAFAAYwBrAGYAZAB1AEUAagB0AHEAbQBiAHoATwBiAG4AZgB0AAEAEwABAAEAAQBCAGQAdQBwAHMAOwBTAGYAZABmAGoAdwBmAFUAagBkAGwAAQAGAAEAAQABAFUAagBkAGwAAQAlAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQALAAEAAQABAEQAbQBiAHQAdABPAGIAbgBmAAEACwABAAEAAQBEAG0AYgB0AHQATwBiAG4AZgABACYAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAOAAEAAQABAEwAMwBPAHAAZQBmAGAARgB3AGYAbwB1AAEAJwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACgABAAEAAQBPAHAAZQBmAEgAdgBqAGUAAQAKAAEAAQABAE8AcABlAGYASAB2AGoAZQABACgAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAiAAEAAQABAEQAQgA6AEUARgBGADQANwA1ADcANwA1AEYAMgA2ADUARQA4AEYAOAA4ADkAQwA0ADcARwA6ADUARQAxAEIARQABACkAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAVABkAGkAZgBuAGIATwBiAG4AZgABAAwAAQABAAEAVABkAGkAZgBuAGIATwBiAG4AZgABACoAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQASAAEAAQABAEYAZQBIAHMAYgBxAGkAVABkAGkAZgBuAGIAYABMADMAAQArAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAEgAbQB6AHEAaQABAAcAAQABAAEASABtAHoAcQBpAAEALAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABcAAQABAAEASABzAGIAcQBpAEYAZQBqAHUAcABzAC8ARgB3AGYAbwB1AGAAMgA3AHkAAQAtAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAMAAEAAQABAEgAbQB6AHEAaQBEAHAAbQBwAHMAAQAMAAEAAQABAEgAbQB6AHEAaQBEAHAAbQBwAHMAAQAuAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEALwABAAEAAQApAFMAPgAyAC8AMQAxADEAMQAxADEALQBIAD4AMgAvADEAMQAxADEAMQAxAC0AQwA+ADIALwAxADEAMQAxADEAMQAtAEIAPgAyAC8AMQAxADEAMQAxADEAKgABAC8AAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAkAAQABAAEARABwAG4AbgBmAG8AdQABAAkAAQABAAEARABwAG4AbgBmAG8AdQABADAAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEAUQBqAG8AdAABAAYAAQABAAEAUQBqAG8AdAABADEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABADIAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAMwABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEANAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAoAAQABAAEAZQBmAG0AZgBoAGIAdQBmAAEANQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEANgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEANwABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAYAAQABAAEAZgB5AGYAZAABADgAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABADkAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAPAAEAAQABAEUAZgBtAHUAYgAhAFQAZgBkAHAAbwBlAHQAAQA6AAEAAQABAAEAAQABAAEAAQABAAEA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AQABAAEAAQABAAEAVAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAYAAQABAAEAZgB5AGYAZAABAFUAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAFYAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEARABwAG4AcQBwAG8AZgBvAHUAdAABAAwAAQABAAEARABwAG4AcQBwAG8AZgBvAHUAdAABAFcAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAFgAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQASAAEAAQABAEUAZgBnAGIAdgBtAHUAVABkAGYAbwBmAFMAcABwAHUAAQBZAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAQAAEAAQABAEoAdABUAEQAVABEAHAAbgBxAHAAbwBmAG8AdQABABAAAQABAAEASgB0AFQARABUAEQAcABuAHEAcABvAGYAbwB1AAEAWgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAFsAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAIAAEAAQABAHAAYwBrAGYAZAB1AAEAXAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBQAGMAawBmAGQAdQBEAG0AYgB0AHQAAQANAAEAAQABAFAAYwBrAGYAZAB1AEQAbQBiAHQAdAABAF0AAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAQAAEAAQABAFQAZABmAG8AZgBEAHAAbgBxAHAAbwBmAG8AdQABAHsAIgAwACIAOgBbAF0ALAAiADEAIgA6AFsAewAiADIAIgA6ACIAMwAiACwAIgA0ACIAOgAiADUAIgAsACIANgAiADoAWwB7ACIANwAiADoAIgA4ACIALAAiADkAIgA6ACIAMQAwACIALAAiADEAMQAiADoAIgAxADIAIgAsACIAMQAzACIAOgAiADEANAAiACwAIgAxADUAIgA6ACIAMQA2ACIALAAiADEANwAiADoAIgAxADgAIgAsACIAMQA5ACIAOgAiADIAMAAiACwAIgAyADEAIgA6AFsAewAiADIAMgAiADoAIgAyADMAIgAsACIAMgA0ACIAOgAiADIANQAiACwAIgAyADYAIgA6ACIAMgA3ACIALAAiADIAOAAiADoAZgBhAGwAcwBlACwAIgAyADkAIgA6AGYAYQBsAHMAZQB9ACwAewAiADMAMAAiADoAIgAzADEAIgAsACIAMgA0ACIAOgAiADMAMgAiACwAIgAyADYAIgA6ACIAMwAzACIALAAiADIAOAAiADoAZgBhAGwAcwBlACwAIgAyADkAIgA6AGYAYQBsAHMAZQB9AF0AfQAsAHsAIgAzADQAIgA6ACIAMwA1ACIALAAiADMANgAiADoAIgAzADcAIgAsACIAMwA4ACIAOgAiADMAOQAiACwAIgA0ADAAIgA6ACIANAAxACIALAAiADQAMgAiADoAIgA0ADMAIgAsACIANAA0ACIAOgAiADQANQAiACwAIgA0ADYAIgA6ACIAMgAwACIALAAiADQANwAiADoAWwB7ACIANAA4ACIAOgAiADQAOQAiACwAIgAyADQAIgA6ACIANQAwACIALAAiADIANgAiADoAIgA1ADEAIgAsACIAMgA4ACIAOgBmAGEAbABzAGUALAAiADIAOQAiADoAZgBhAGwAcwBlAH0ALAB7ACIANQAyACIAOgAiADMAMQAiACwAIgAyADQAIgA6ACIANQAzACIALAAiADIANgAiADoAIgA1ADQAIgAsACIAMgA4ACIAOgBmAGEAbABzAGUALAAiADIAOQAiADoAZgBhAGwAcwBlAH0ALAB7ACIANQA1ACIAOgAiADUANgAiACwAIgAyADQAIgA6ACIANQA3ACIALAAiADIANgAiADoAIgA1ADgAIgAsACIAMgA4ACIAOgBmAGEAbABzAGUALAAiADIAOQAiADoAZgBhAGwAcwBlAH0AXQB9AF0ALAAiADUAOQAiADoAWwBdAH0AXQAsACIANgAwACIAOgBbAHsAIgA2ADEAIgA6ACIANgAyACIALAAiADYAMwAiADoAIgA2ADQAIgAsACIANgA1ACIAOgBbAHsAIgA2ADYAIgA6ACIANgA3ACIALAAiADYAOAAiADoAIgA2ADkAIgAsACIANwAwACIAOgAiADcAMQAiACwAIgA3ADIAIgA6ACIANwAzACIALAAiADcANAAiADoAIgA3ADUAIgAsACIANwA2ACIAOgAiADcANwAiACwAIgA3ADgAIgA6ACIANwA5ACIALAAiADgAMAAiADoAWwB7ACIAOAAxACIAOgAiADMAMgAiACwAIgAyADQAIgA6ACIAOAAyACIALAAiADIANgAiADoAIgA4ADMAIgAsACIAMgA4ACIAOgBmAGEAbABzAGUALAAiADIAOQAiADoAZgBhAGwAcwBlAH0AXQB9AF0ALAAiADgANAAiADoAWwBdAH0AXQAsACIAOAA1ACIAOgBbAHsAIgA4ADYAIgA6ACIAOAA3ACIALAAiADgAOAAiADoAdAByAHUAZQAsACIAOAA5ACIAOgAiADkAMAAiACwAIgA5ADEAIgA6ACIAOQAyACIALAAiADIAOAAiADoAZgBhAGwAcwBlACwAIgAyADkAIgA6AGYAYQBsAHMAZQB9AF0AfQA=
