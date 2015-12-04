@@ -4,7 +4,7 @@
 
 #include "W1ProjectileDamageEffect.generated.h"
 
-UCLASS(Blueprintable, meta = (DisplayName = "Damage Effect"))
+UCLASS(Blueprintable, editinlinenew, autoExpandCategories = (Test), meta = (DisplayName = "Damage Effect"))
 class UW1ProjectileDamageEffect : public UObject
 {
 	GENERATED_BODY()

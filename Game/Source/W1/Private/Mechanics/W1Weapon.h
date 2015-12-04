@@ -3,7 +3,8 @@
 #pragma once
 
 #include "Engine/ActorChannel.h"
-#include "W1ItemState.h"
+#include "W1ProjectileDamageEffect.h"
+#include "W1ProjectileFireWeaponState.h"
 #include "W1Weapon.generated.h"
 
 UCLASS(Abstract, Blueprintable)
@@ -13,5 +14,5 @@ class AW1Weapon : public AActor
 
 public:
 	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Category = States)
-	UW1ItemState* FireState;
+	UW1ProjectileFireWeaponState* FireState;
 };

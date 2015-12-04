@@ -6,12 +6,12 @@
 #include "W1ItemState.h"
 #include "W1ProjectileFireWeaponState.generated.h"
 
-UCLASS()
+UCLASS(autoExpandCategories = (Test))
 class UW1ProjectileFireWeaponState : public UW1ItemState
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(Instanced, BlueprintReadOnly, EditDefaultsOnly, Category = Config)
-	TArray<UW1ProjectileDamageEffect*> ProjectileEffects;
+	UPROPERTY(Instanced, BlueprintReadOnly, EditDefaultsOnly, Category = Test)
+	UW1ProjectileDamageEffect* EmbeddedElement;
 };
