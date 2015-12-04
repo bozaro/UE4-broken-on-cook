@@ -3,11 +3,10 @@
 #pragma once
 
 #include "W1ProjectileDamageEffect.h"
-#include "W1ItemState.h"
 #include "W1ProjectileFireWeaponState.generated.h"
 
-UCLASS(autoExpandCategories = (Test))
-class UW1ProjectileFireWeaponState : public UW1ItemState
+UCLASS(DefaultToInstanced, Blueprintable, editinlinenew, Within = W1Weapon, autoExpandCategories = (Test))
+class UW1ProjectileFireWeaponState : public UObject
 {
 	GENERATED_BODY()
 
