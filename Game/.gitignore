@@ -12,3 +12,4 @@
 # wwise
 /TempDefinitionFile.txt
 /WwiseOutputFile.log
+/Config/DefaultGame.ini 

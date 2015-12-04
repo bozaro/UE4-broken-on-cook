@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "W1ProjectileDamageEffect.h"
+#include "W1Leaf.h"
 #include "W1ProjectileFireWeaponState.generated.h"
 
 UCLASS(DefaultToInstanced, Blueprintable, editinlinenew, Within = W1Weapon, autoExpandCategories = (Test))
@@ -12,5 +12,5 @@ class UW1ProjectileFireWeaponState : public UObject
 
 public:
 	UPROPERTY(Instanced, BlueprintReadOnly, EditDefaultsOnly, Category = Test)
-	UW1ProjectileDamageEffect* EmbeddedElement;
+	UW1Leaf* Leaf;
 };

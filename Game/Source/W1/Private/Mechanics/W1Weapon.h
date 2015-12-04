@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Engine/ActorChannel.h"
-#include "W1ProjectileDamageEffect.h"
+#include "W1Node.h"
 #include "W1ProjectileFireWeaponState.h"
 #include "W1Weapon.generated.h"
 
@@ -13,6 +13,9 @@ class AW1Weapon : public AActor
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Category = States)
+	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Category = Test)
 	UW1ProjectileFireWeaponState* FireState;
+
+	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Category = Test)
+	UW1Node* Node;
 };
