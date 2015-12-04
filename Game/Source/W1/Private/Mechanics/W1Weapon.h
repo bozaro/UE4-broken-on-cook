@@ -7,13 +7,11 @@
 #include "W1Weapon.generated.h"
 
 UCLASS(Abstract, Blueprintable)
-class AW1Weapon : public AW1InventoryItem
+class AW1Weapon : public AActor
 {
 	GENERATED_BODY()
 
 public:
-	AW1Weapon(const FObjectInitializer& ObjectInitializer);
-
-	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Replicated, Category = States)
+	UPROPERTY(Instanced, EditDefaultsOnly, BlueprintReadOnly, Category = States)
 	UW1ItemState* FireState;
 };
